@@ -1,4 +1,4 @@
-const inputField = document.querySelector('.input-field');
+const inputField = document.querySelectorAll('.input-field');
 const look = document.querySelector('#look');
 const cpf = document.querySelector('#cpf');
 const pass = document.querySelector('#password');
@@ -15,13 +15,35 @@ look.addEventListener('click', () => {
 });
 
 cpf.addEventListener ('blur', function created() {
+    /*    WARNING     */
+    const warning = document.querySelector('#warning');
+
+    warning.style.display = 'block';
+    warning.style.color = '#D35B59';
+
     let boxTo = document.querySelector('.second-text')
     let help = document.createElement("p")
     help.appendChild(document.createTextNode("Este campo é obrigatório"))
     boxTo.appendChild(help)
 
+    help.style.color = '#D35B59'
+    boxTo.style.letterSpacing = '1px'
+    inputField[0].style.borderBottom = '2px solid #D35B59'
     
-    cpf.removeEventListener('blur', created)
+
+
+    cpf.removeEventListener('blur', created);
+});
+
+pass.addEventListener('blur', () => {
+    const txtHelp = document.querySelector('#txt-help')
+
+    txtHelp.innerHTML= "Este campo é obrigatório";
+
+    txtHelp.style.color = '#D35B59'
+    txtHelp.style.letterSpacing = '1px'
+    inputField[1].style.borderBottom = '2px solid #D35B59'
+    look.style.color = '#D35B59'
 });
 
 look.addEventListener('click', () => {

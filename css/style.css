@@ -71,13 +71,16 @@ section {
     cursor: text;
     caret-color: rgb(188, 132, 247);
     border-bottom: 2px solid rgb(34, 34, 34);
-    
 }
 
 .input-field i {
     cursor: pointer;
     color: rgb(163, 163, 163);
     font-size: 20px;
+}
+
+.input-field #warning {
+    display: none;
 }
 
 .input-field input {
