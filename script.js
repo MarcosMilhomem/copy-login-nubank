@@ -20,6 +20,7 @@ cpf.addEventListener ('blur', function created() {
     help.appendChild(document.createTextNode("Este campo é obrigatório"))
     boxTo.appendChild(help)
 
+    
     cpf.removeEventListener('blur', created)
 });
 
