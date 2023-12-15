@@ -14,8 +14,13 @@ look.addEventListener('click', () => {
     look.classList.add('fa-eye-slash')
 });
 
-pass.addEventListener ('blur', () => {
-    const help = document.querySelector('#txt-help')
+cpf.addEventListener ('blur', function created() {
+    let boxTo = document.querySelector('.second-text')
+    let help = document.createElement("p")
+    help.appendChild(document.createTextNode("Este campo é obrigatório"))
+    boxTo.appendChild(help)
+
+    cpf.removeEventListener('blur', created)
 });
 
 look.addEventListener('click', () => {
