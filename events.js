@@ -29,8 +29,6 @@ cpf.addEventListener ('blur', function created() {
     help.style.color = '#D35B59'
     boxTo.style.letterSpacing = '1px'
     inputField[0].style.borderBottom = '2px solid #D35B59'
-    
-
 
     cpf.removeEventListener('blur', created);
 });
