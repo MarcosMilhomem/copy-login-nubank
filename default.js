@@ -1,10 +1,4 @@
-const inputField = document.querySelectorAll('.input-field');
-const cpf = document.querySelector('#cpf');
-const pass = document.querySelector('#password');
-const txtHelp = document.querySelector('#txt-help');
+const campCpf = document.querySelector('#cpf')
+const campPass = document.querySelector('#password')
 
-function limit() {
-    if (pass.length == 1) {
-
-    }
-};
+function das(){}
