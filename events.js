@@ -2,6 +2,7 @@ const inputField = document.querySelectorAll('.input-field');
 const look = document.querySelector('#look');
 const cpf = document.querySelector('#cpf');
 const pass = document.querySelector('#password');
+const passW = document.querySelector('#password');
 const txtHelp = document.querySelector('#txt-help')
 
 
@@ -43,14 +44,13 @@ pass.addEventListener('blur', () => {
     txtHelp.style.letterSpacing = '1px'
     inputField[1].style.borderBottom = '2px solid #D35B59'
     look.style.color = '#D35B59'
-    if (pass.value.length >= 1) {
-        pass.removeEventListener('blur', pass)
-        addEventListener('input', () => {
-            txtHelp.innerHTML= "A senha deve ter 8 dígitos ou mais"
-        });
-    }
 });
 
+pass.addEventListener('blur', () => {
+    if (pass.value.length >= 1) {
+        txtHelp.innerHTML = 'A senha deve ter 8 dígitos ou mais'
+    } return
+});
 
 look.addEventListener('click', () => {
     const modePass = pass.getAttribute('type')
@@ -58,7 +58,7 @@ look.addEventListener('click', () => {
     if (modePass === 'password') {
         pass.setAttribute('type', 'text')
 
-        return
+        return;
     }
     pass.setAttribute('type', 'password');
 });

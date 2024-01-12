@@ -24,10 +24,10 @@ section {
     display: flex;
     width: 50%;
     height: 100vh;
-    background-image: url('../midias/wife-Nubank.jpg');
+    background-image: url('../midias/wife-Nubank.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
 }
 
 #second-box {
