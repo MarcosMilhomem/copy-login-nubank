@@ -36,6 +36,8 @@ cpf.addEventListener('blur', function created() {
     cpf.removeEventListener('blur', created);
 });
 
+cpf.addEventListener()
+
 pass.addEventListener('blur', () => {
 
     txtHelp.innerHTML = "Este campo é obrigatório";
